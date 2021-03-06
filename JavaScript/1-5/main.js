@@ -8,9 +8,11 @@ function createJuice(fruits) {
 
     //④受け取った果物にジュースという文字列を結合して、呼び出し元に返す
 
-    return console.log(fruits + "ジュース");
+    return fruits + "ジュース";
 
 
 }
-createJuice("みかん") + "が届きました";
+let orangeJuice = createJuice("みかん");
+console.log(orangeJuice + "が届きました");
+
 
