@@ -38,12 +38,12 @@ public class Task1_5 {
         */
          
         for(int v = 1; v <= 9; v++) {
-            System.out.print(v + " ||");
+            System.out.print(v + " || ");
 
             for(int j = 1; j <= 9; j++) {
-                System.out.print(" |" + v * j );    
+                System.out.print(v * j + " | " );    
             }
-            System.out.println("|");
+            System.out.println(" ");
 
 
     }
