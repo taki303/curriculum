@@ -6,7 +6,7 @@ function isEven(num) {
     }
 }
 for(i = 0; i < numbers.length; i ++){
-    isEven(i)
+    isEven(numbers[i]);
 }
 
 
