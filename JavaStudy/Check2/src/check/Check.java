@@ -3,25 +3,22 @@ package check;
 import constants.Constants;
 
 public class Check {
-	private String firstName = "ともあき";
-	private String lastName = "滝";
+	private static String firstName = "ともあき";
+	private static String lastName = "滝";
 
-	private void printName() {
-		System.out.println("printNameメソッド → " + this.lastName + this.firstName);
+	private static void printName() {
+		System.out.println("printNameメソッド　→　" + lastName + firstName);
 	}
 
 	public static void main(String[] args) {
-
-		Check check = new Check();
 
 		RobotPet rob = new RobotPet(Constants.CHECK_CLASS_R2D2, Constants.CHECK_CLASS_LUKE);
 
 		Pet pet = new Pet(Constants.CHECK_CLASS_JAVA, Constants.CHECK_CLASS_HOGE);
 
-		check.printName();
+		printName();
 		pet.introduce();
 		rob.introduce();
-
 	}
 
 }
