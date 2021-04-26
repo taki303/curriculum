@@ -6,7 +6,7 @@ public class Check {
 	private static String firstName = "ともあき";
 	private static String lastName = "滝";
 
-	private static void printName() {
+	private static void printName(String lastName, String firstName) {
 		System.out.println("printNameメソッド　→　" + lastName + firstName);
 	}
 
@@ -16,7 +16,7 @@ public class Check {
 
 		Pet pet = new Pet(Constants.CHECK_CLASS_JAVA, Constants.CHECK_CLASS_HOGE);
 
-		printName();
+		printName(lastName, firstName);
 		pet.introduce();
 		rob.introduce();
 	}
